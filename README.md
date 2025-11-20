@@ -66,7 +66,7 @@ This repository contains:
 
 ### **Clone the repository**
 ```bash
-git clone https://github.com/<your-username>/NXGFitTrack.git
+git clone https://github.com/AkashV-MLEngr/NXGFitTrack-App.git
 cd NXGFitTrack
 ```
 ### **Install dependencies**
