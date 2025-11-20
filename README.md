@@ -26,6 +26,31 @@ NXG FitTrack is a **native mobile app** (iOS & Android) built with **React Nativ
   - Personal best per exercise (list or bar chart).
 - Filter workout history.
 
+### **Tech Stack**
+- Mobile App: React Native, React Navigation, React Native Charts
+- State Management: Zustand
+- Storage: AsyncStorage
+- API Communication: Axios with Bearer token authentication
+- Backend API: FastAPI)
+- Database: PostgreSQL (for user data, workouts, history)
+
+### **AsyncStorage**
+- Used to persist user profile, credentials, and session data locally on the device.
+- Provides persistent key-value storage.
+- Example usage: store access token and cached profile for offline use.
+
+### **Zustand**
+- A lightweight state management library for React.
+- Used to manage global app state such as user profile, credentials, and history count.
+- Works well with AsyncStorage for keeping the UI in sync with persisted data.
+
+### **API Notes**
+- Authorization: Every request to the backend requires a Bearer token (access_token) in the headers.
+- Example:
+```
+GET /workouts/templates
+Authorization: Bearer <access_token>
+```
 ---
 
 ## **Screenshots / Demo**
