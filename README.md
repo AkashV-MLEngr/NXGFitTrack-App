@@ -31,8 +31,27 @@ NXG FitTrack is a **native mobile app** (iOS & Android) built with **React Nativ
 ## **Screenshots / Demo**
 
 <!-- Add screenshots or GIF here -->
-![Profile](./assets/screenshots/login.png)
+![Login](src/assets/screenshots/login.png)
+![Home](src/assets/screenshots/Home.png)
+![Profile](src/assets/screenshots/Profile.png)
+![Edit Profile](src/assets/screenshots/EditProfile.png)
+![History](src/assets/screenshots/history.png)
+![Add Exercise](src/assets/screenshots/addExercise.png)
+![Add Workout](src/assets/screenshots/addWorkout.png)
+![App Demo](src/assets/screenshots/Demo-NXGFitTrack.mp4)
 
+---
+## Backend API
+
+The backend for NXG FitTrack is hosted in a separate repository:
+
+[GitHub - NXGFitTrack API](https://github.com/AkashV-MLEngr/NXGFitTrack-API)
+
+This repository contains:
+
+- FastAPI backend with user authentication, workouts, history, and metrics.
+- Database migrations and seed data.
+- Instructions to run locally or via Docker.
 
 ---
 
@@ -43,9 +62,21 @@ NXG FitTrack is a **native mobile app** (iOS & Android) built with **React Nativ
 - npm / yarn
 - React Native CLI
 - Android Studio / Xcode (for simulators/emulators)
-- Backend API running (FastAPI / Node.js, etc.)
+- Backend API running (FastAPI)
 
 ### **Clone the repository**
 ```bash
 git clone https://github.com/<your-username>/NXGFitTrack.git
 cd NXGFitTrack
+```
+### **Install dependencies**
+```npm install
+```
+### **Run on Android**
+```
+npx react-native run-android
+```
+### **Run on IOS**
+```
+npx react-native run-ios
+```
